@@ -23,16 +23,16 @@ def demo1(verbose: bool = False):
         if _a0_turn['mode'] == "output":
             _global_turn["output"] = {"agent": agents["0"],
                                       "turn": _a0_turn}
-            _global_turn["input"] = {"agent": agents["1"],
-                                     "turn": _a1_turn}
+            _global_turn["input"]  = {"agent": agents["1"],
+                                      "turn": _a1_turn}
         elif _a1_turn['mode'] == "output":
             _global_turn["output"] = {"agent": agents["1"],
                                       "turn": _a1_turn}
-            _global_turn["input"] = {"agent": agents["0"],
-                                     "turn": _a0_turn}
+            _global_turn["input"]  = {"agent": agents["0"],
+                                      "turn": _a0_turn}
 
-        # print(f"OUTPUT: {_global_turn['output']}")
-        # print(f"INPUT: {_global_turn['input']}")
+        print(f"OUTPUT: {_global_turn['output']}")
+        print(f"INPUT: {_global_turn['input']}")
         _global_turn["output"]["agent"].handle(_global_turn["output"]["turn"])
         _global_turn["input"]["agent"].handle(_global_turn["input"]["turn"])
 
