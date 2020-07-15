@@ -7,9 +7,9 @@ _indent_char = "\t"
 INDENT = f"{_indent_char * _indent_num}"
 
 # --- DIRECTORIES
-ROOT_DIR = Path(f"{os.path.abspath(__file__)}").parent.parent
+ROOT_DIR = Path(f"{os.path.abspath(__file__)}").parent.parent.parent
 DATA_DIR = f'{ROOT_DIR}/data'
-IMAGE_DIR = f'{ROOT_DIR}/images'
+IMAGE_DIR = f'{ROOT_DIR}/resources/images'
 DIALOG_DIR = f"{DATA_DIR}/dialog"
 SCRIPT_DIR = f"{DATA_DIR}/script"
 
